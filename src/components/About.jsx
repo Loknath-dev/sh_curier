@@ -3,7 +3,7 @@ export default function AboutUs() {
     { value: "Same-Day", label: "Local Dispatch" },
     { value: "Real Person", label: "Customer Support" },
     { value: "100%", label: "Care & Security" },
-    { value: "No Hidden", label: "Fuel Surcharges" },
+    { value: "5K + /Day", label: "Deliveries Handled." },
   ];
 
   return (

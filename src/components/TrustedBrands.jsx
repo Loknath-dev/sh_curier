@@ -5,17 +5,17 @@ import Shadowfax from "../assets/brands.logo/Shadowfax.jpeg";
 const BRANDS = [
   {
     name: "Flipkart",
-    role: "Last-Mile Fulfilment",
+    role: "",
     src: Flipkart,
   },
   {
     name: "Meesho",
-    role: "Regional Logistics Partner",
+    role: "",
     src: Meesho,
   },
   {
     name: "Shadowfax",
-    role: "Last-Mile Delivery Associate",
+    role: "",
     src: Shadowfax,
   },
 ];
@@ -94,7 +94,7 @@ export default function TrustedBrands() {
                   <img
                     src={brand.src}
                     alt={brand.name}
-                    className="max-h-10 sm:max-h-12 lg:max-h-14 max-w-30 sm:max-w-37.5 lg:max-w-42.5 object-contain transition-transform duration-500 group-hover:scale-110"
+                    className="max-h-20 sm:max-h-21 lg:max-h-24 max-w-30 sm:max-w-37.5 lg:max-w-42.5 object-contain transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
 

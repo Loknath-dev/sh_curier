@@ -1,1 +1,1 @@
-export const _address = "📍 10 Barobisha, Alipurduar 736207";
+export const _address = "📍 14 Dakhin Narathali, Alipurduar 736202";

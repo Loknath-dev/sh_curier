@@ -25,7 +25,7 @@ export default function Contact() {
           <div className="bg-slate-900 text-white p-8 sm:p-12 flex flex-col justify-between lg:col-span-1">
             <div>
               <h3 className="text-2xl font-black tracking-tight text-white mb-4">
-                Operations Center
+                Get In Touch
               </h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-8">
                 Connect directly with our central communications command. For

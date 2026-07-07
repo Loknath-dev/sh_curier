@@ -16,12 +16,10 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:w-2/3 text-left">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 mb-6 border border-amber-500/20">
-            Now Operating Globally
-          </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none mb-6">
-            Your Trusted Partner <br />
-            <span className="text-amber-500">for Last-Mile Delivery.</span>
+            Delivering Trust. <br />
+            <span className="text-amber-500">Every Mile.</span> <br />
+            <span className="text-white">Every Time.</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl">
             Connecting Bengal with unparalleled speed and reliability. We
