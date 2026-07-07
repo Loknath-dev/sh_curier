@@ -20,13 +20,13 @@ export default function Hero() {
             Now Operating Globally
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none mb-6">
-            Logistics Without Boundaries. <br />
-            <span className="text-amber-500">Supply Chains Secured.</span>
+            Your Trusted Partner <br />
+            <span className="text-amber-500">for Last-Mile Delivery.</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl">
-            SH Courier & Supply delivers smart global freight, express courier
-            networks, and absolute supply chain visibility from factory floor to
-            end consumer.
+            Connecting Bengal with unparalleled speed and reliability. We
+            empower businesses to thrive by delivering promises, not just
+            parcels.
           </p>
 
           {/* Tracking Bar Component */}

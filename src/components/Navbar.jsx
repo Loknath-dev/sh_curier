@@ -42,13 +42,6 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <button className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-6 py-2.5 rounded-lg transition-all shadow-lg hover:shadow-amber-500/20">
-              Ship Now
-            </button>
-          </div>
-
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -109,9 +102,6 @@ export default function Navbar() {
           >
             Contact
           </a>
-          <button className="w-full mt-2 bg-amber-500 text-slate-900 font-bold py-2 rounded-lg">
-            Ship Now
-          </button>
         </div>
       )}
     </nav>
