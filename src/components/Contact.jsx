@@ -147,7 +147,7 @@ export default function Contact() {
               <div className="text-right">
                 <button
                   type="submit"
-                  className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-8 py-3.5 rounded-xl text-sm transition-all shadow-md hover:shadow-amber-500/20 uppercase tracking-wider font-black"
+                  className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-8 py-3.5 rounded-xl text-sm transition-all shadow-md hover:shadow-amber-500/20 uppercase tracking-wider"
                 >
                   Transmit Message
                 </button>

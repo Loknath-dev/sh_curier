@@ -149,7 +149,7 @@ export default function Calculator() {
                   "_blank",
                 )
               }
-              className="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3.5 px-4 rounded-xl transition-colors text-sm shadow-lg shadow-amber-500/10 uppercase tracking-wider font-black"
+              className="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3.5 px-4 rounded-xl transition-colors text-sm shadow-lg shadow-amber-500/10 uppercase tracking-wider"
             >
               Book via WhatsApp
             </button>

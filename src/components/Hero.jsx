@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <div className="relative bg-slate-900 text-white py-24 lg:py-32 overflow-hidden">
       {/* Decorative background grid pattern or overlay */}
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] bg-size-[16px_16px]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:w-2/3 text-left">
@@ -38,7 +38,7 @@ export default function Hero() {
               onSubmit={handleTrack}
               className="flex flex-col sm:flex-row gap-3"
             >
-              <div className="relative flex-grow">
+              <div className="relative grow">
                 <input
                   type="text"
                   placeholder="Enter tracking number (e.g., SH-109283)"

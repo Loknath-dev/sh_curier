@@ -9,11 +9,6 @@ const services = [
     desc: "End-to-end warehousing, inventory orchestration, and bulk cross-docking infrastructure for enterprise retail.",
     icon: "🌐",
   },
-  {
-    title: "Freight Forwarding",
-    desc: "Reliable air, ocean, and intermodal surface freight forwarding optimized for cost efficiency and tight timelines.",
-    icon: "🚛",
-  },
 ];
 
 export default function Services() {
