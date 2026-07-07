@@ -35,6 +35,12 @@ export default function Navbar() {
               About Us
             </a>
             <a
+              href="#careers"
+              className="hover:text-amber-500 transition-colors"
+            >
+              Careers
+            </a>
+            <a
               href="#contact"
               className="hover:text-amber-500 transition-colors"
             >
@@ -95,6 +101,12 @@ export default function Navbar() {
             className="block text-gray-300 hover:text-amber-400 py-2"
           >
             About Us
+          </a>
+          <a
+            href="#careers"
+            className="block text-gray-300 hover:text-amber-400 py-2"
+          >
+            Careers
           </a>
           <a
             href="#contact"

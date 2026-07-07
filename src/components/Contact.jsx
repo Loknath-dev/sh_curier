@@ -1,157 +1,184 @@
 import { useState } from "react";
+import { FaEnvelope, FaPaperPlane, FaPhoneAlt } from "react-icons/fa";
 import { _contact1, _email } from "../utils/contacts";
 
 export default function Contact() {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    subject: "general",
+    phone: "",
     message: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(
-      `Thank you ${form.name}. Operations has queued your request regarding "${form.subject}".`,
-    );
-    setForm({ name: "", email: "", subject: "general", message: "" });
+
+    alert(`Thank you, ${form.name}! We've received your message.`);
+
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
   };
 
   return (
-    <section id="contact-form" className="py-20 bg-slate-50 text-slate-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
-          {/* Left Block: Communication Details */}
-          <div className="bg-slate-900 text-white p-8 sm:p-12 flex flex-col justify-between lg:col-span-1">
-            <div>
-              <h3 className="text-2xl font-black tracking-tight text-white mb-4">
-                Get In Touch
-              </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-8">
-                Connect directly with our central communications command. For
-                instant status updates regarding cargo manifests or priority
-                customs clearances, use our direct telephone lines.
-              </p>
+    <section id="contact" className="bg-slate-50 py-20">
+      <div className="max-w-6xl mx-auto px-5">
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-4xl font-bold text-slate-900">Contact Us</h2>
+          <p className="mt-3 text-slate-600 max-w-2xl mx-auto">
+            Have a question about our logistics services or need assistance?
+            Fill out the form below and our team will get back to you as soon as
+            possible.
+          </p>
+        </div>
 
-              <div className="space-y-6 text-sm">
+        <div className="grid lg:grid-cols-3 gap-8">
+          {/* Left Side */}
+          <div className="bg-slate-900 text-white rounded-3xl p-8 flex flex-col justify-between">
+            <div>
+              <h3 className="text-2xl font-bold mb-8">Contact Information</h3>
+
+              <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <span className="text-amber-500 text-lg">📞</span>
+                  <div className="w-12 h-12 rounded-xl bg-amber-500 flex items-center justify-center text-slate-900">
+                    <FaPhoneAlt />
+                  </div>
+
                   <div>
-                    <h4 className="font-bold text-white">
-                      Commercial Hotlines
-                    </h4>
-                    <p className="text-slate-400 text-xs mt-0.5">{_contact1}</p>
+                    <h4 className="font-semibold">Phone</h4>
+                    <p className="text-slate-300 text-sm">{_contact1}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <span className="text-amber-500 text-lg">✉️</span>
+                  <div className="w-12 h-12 rounded-xl bg-amber-500 flex items-center justify-center text-slate-900">
+                    <FaEnvelope />
+                  </div>
+
                   <div>
-                    <h4 className="font-bold text-white">
-                      Digital Manifest Inquiries
-                    </h4>
-                    <p className="text-slate-400 text-xs mt-0.5">{_email}</p>
+                    <h4 className="font-semibold">Email</h4>
+                    <p className="text-slate-300 text-sm">{_email}</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="mt-12 pt-6 border-t border-slate-800 text-xs text-slate-500">
-              Average response time for commercial ticketing:{" "}
-              <strong>&lt; 14 minutes</strong>.
+            <div className="mt-10 border-t border-slate-700 pt-6">
+              <p className="text-sm text-slate-400">
+                We're here to help with shipping, delivery, tracking,
+                partnerships, and general support.
+              </p>
             </div>
           </div>
 
-          {/* Right Block: Dynamic Form */}
-          <div className="p-8 sm:p-12 lg:col-span-2">
-            <h3 className="text-xl font-bold tracking-tight mb-2 text-slate-900">
-              Initiate a Manifest Inquiry
+          {/* Right Side */}
+          <div className="lg:col-span-2 bg-white rounded-3xl shadow-lg p-8">
+            <h3 className="text-2xl font-bold text-slate-900 mb-2">
+              Send us a Message
             </h3>
-            <p className="text-sm text-slate-500 mb-8">
-              Fill out the brief context form below, and our routing desk will
-              flag your message to the correct regional hub dispatcher.
+
+            <p className="text-slate-500 mb-8">
+              Complete the form below and our team will contact you shortly.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {/* Name & Email */}
+              <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-                    Your Name
+                  <label className="block mb-2 font-medium text-slate-700">
+                    Full Name
                   </label>
+
                   <input
                     type="text"
                     required
                     value={form.name}
-                    onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors"
-                    placeholder="John Doe"
+                    onChange={(e) =>
+                      setForm({
+                        ...form,
+                        name: e.target.value,
+                      })
+                    }
+                    placeholder="Enter your full name"
+                    className="w-full border border-slate-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500"
                   />
                 </div>
+
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-                    Corporate Email Address
+                  <label className="block mb-2 font-medium text-slate-700">
+                    Email Address
                   </label>
+
                   <input
                     type="email"
                     required
                     value={form.email}
                     onChange={(e) =>
-                      setForm({ ...form, email: e.target.value })
+                      setForm({
+                        ...form,
+                        email: e.target.value,
+                      })
                     }
-                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors"
-                    placeholder="j.doe@company.com"
+                    placeholder="you@example.com"
+                    className="w-full border border-slate-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500"
                   />
                 </div>
               </div>
 
+              {/* Phone */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-                  Inquiry Classification
+                <label className="block mb-2 font-medium text-slate-700">
+                  Phone Number
                 </label>
-                <select
-                  value={form.subject}
+
+                <input
+                  type="tel"
+                  required
+                  value={form.phone}
                   onChange={(e) =>
-                    setForm({ ...form, subject: e.target.value })
+                    setForm({
+                      ...form,
+                      phone: e.target.value,
+                    })
                   }
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors"
-                >
-                  <option value="general">
-                    General Operations / Shipping Inquiry
-                  </option>
-                  <option value="enterprise">
-                    Enterprise Contract Logistics Solutions
-                  </option>
-                  <option value="billing">
-                    Discrepancy Invoicing & Custom Fees
-                  </option>
-                  <option value="careers">Carrier Network Partnerships</option>
-                </select>
+                  placeholder="+91 98765 43210"
+                  className="w-full border border-slate-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
               </div>
 
+              {/* Message */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-                  Detailed Message
+                <label className="block mb-2 font-medium text-slate-700">
+                  Message
                 </label>
+
                 <textarea
-                  rows="4"
+                  rows={5}
                   required
                   value={form.message}
                   onChange={(e) =>
-                    setForm({ ...form, message: e.target.value })
+                    setForm({
+                      ...form,
+                      message: e.target.value,
+                    })
                   }
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition-colors resize-none"
-                  placeholder="Please specify weights, destinations, tracking profiles, or specific timelines if applicable..."
-                ></textarea>
+                  placeholder="Write your message here..."
+                  className="w-full border border-slate-300 rounded-xl px-4 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
               </div>
 
-              <div className="text-right">
-                <button
-                  type="submit"
-                  className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-8 py-3.5 rounded-xl text-sm transition-all shadow-md hover:shadow-amber-500/20 uppercase tracking-wider"
-                >
-                  Transmit Message
-                </button>
-              </div>
+              {/* Button */}
+              <button
+                type="submit"
+                className="inline-flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-8 py-3 rounded-xl transition-all duration-300 hover:shadow-lg"
+              >
+                <FaPaperPlane />
+                Send Message
+              </button>
             </form>
           </div>
         </div>
