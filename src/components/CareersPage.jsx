@@ -11,7 +11,7 @@ export default function Careers() {
   const phone = _contact1;
 
   // Remove everything except digits
-  const cleanPhone = _contact1.replace(/\D/g, "");
+  const cleanPhone = _contact1.replace(/\s+/g, "");
 
   const phoneLink = `tel:${cleanPhone}`;
   const whatsappLink = `https://wa.me/${cleanPhone}`;
