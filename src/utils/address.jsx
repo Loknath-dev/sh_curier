@@ -1,1 +1,2 @@
-export const _address = "📍 14 Dakhin Narathali, Alipurduar 736202";
+export const _address =
+  "📍Kamakhyaguri, kumaragram, Alipurduar, West Bengal 736202";

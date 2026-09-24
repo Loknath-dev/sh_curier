@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 
 // https://vite.dev
 export default defineConfig({
-  base: "/sh_curier/",
+  base: "/",
 
   plugins: [react(), tailwindcss()],
 });

@@ -1,12 +1,12 @@
-import Flipkart from "../assets/brands.logo/Flipkart.png";
 import Meesho from "../assets/brands.logo/Meesho.png";
 import Shadowfax from "../assets/brands.logo/Shadowfax.jpeg";
+import Valmo from "../assets/brands.logo/valmo.jpg";
 
 const BRANDS = [
   {
-    name: "Flipkart",
+    name: "Valmo",
     role: "",
-    src: Flipkart,
+    src: Valmo,
   },
   {
     name: "Meesho",

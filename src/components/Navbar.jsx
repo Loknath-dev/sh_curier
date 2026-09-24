@@ -19,18 +19,16 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 font-medium">
+            <a href="/" className="hover:text-amber-500 transition-colors">
+              Home
+            </a>
             <a
               href="#services"
               className="hover:text-amber-500 transition-colors"
             >
               Services
             </a>
-            <a
-              href="#calculator"
-              className="hover:text-amber-500 transition-colors"
-            >
-              Rate Estimator
-            </a>
+
             <a href="#about" className="hover:text-amber-500 transition-colors">
               About Us
             </a>

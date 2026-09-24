@@ -14,7 +14,7 @@ export default function Footer() {
             SH
           </span>
           <span className="text-xl font-bold ml-2 text-white tracking-tight">
-            COURIER
+            COURIER & SUPPLY
           </span>
           <p className="mt-4 text-sm text-slate-500 leading-relaxed">
             Global infrastructure, localized execution. Securing industrial and
@@ -27,12 +27,26 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2.5 text-sm">
             <li>
-              <a href="#" className="hover:text-amber-400 transition-colors">
+              <a
+                href="/first-mile-pickup"
+                className="hover:text-amber-400 transition-colors"
+              >
+                First-Mile Pickup
+              </a>
+            </li>
+            <li>
+              <a
+                href="/last-mile-delivery"
+                className="hover:text-amber-400 transition-colors"
+              >
                 Last-Mile Delivery
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-amber-400 transition-colors">
+              <a
+                href="/warehousing"
+                className="hover:text-amber-400 transition-colors"
+              >
                 Warehousing
               </a>
             </li>
@@ -59,7 +73,10 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-amber-400 transition-colors">
+              <a
+                href="/termsofservice"
+                className="hover:text-amber-400 transition-colors"
+              >
                 Terms of Service
               </a>
             </li>
@@ -87,7 +104,7 @@ export default function Footer() {
           reserved.
         </p>
         <div className="flex space-x-6">
-          <a href="#" className="hover:underline">
+          <a href="/privacypolicy" className="hover:underline">
             Privacy Policy
           </a>
           <a href="#" className="hover:underline">

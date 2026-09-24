@@ -1,48 +1,28 @@
-import AboutUs from "./components/About";
-import Careers from "./components/CareersPage";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Services from "./components/Services";
-import TrustedBrands from "./components/TrustedBrands";
-import WhyChooseUs from "./components/WhyChooseUs";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import FirstMilePickup from "./pages/FirstMilePickup";
+import HomePage from "./pages/HomePage";
+import LastMileDelivery from "./pages/LastMileDelivery";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import Warehousing from "./pages/Warehousing";
 function App() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans antialiased text-slate-900 selection:bg-amber-500 selection:text-white">
-      {/* Header */}
       <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/first-mile-pickup" element={<FirstMilePickup />} />
+          <Route path="/last-mile-delivery" element={<LastMileDelivery />} />
 
-      <main>
-        {/* Hero Banner */}
-        <Hero />
-
-        {/* Trusted by Clients */}
-        <TrustedBrands />
-
-        {/* Company Introduction */}
-        <AboutUs />
-
-        {/* Our Services */}
-        <Services />
-
-        {/* Why Customers Choose Us */}
-        <WhyChooseUs />
-
-        {/* Join Our Team */}
-        <Careers />
-
-        {/* Contact */}
-        <section
-          id="contact"
-          className="bg-gradient-to-b from-slate-50 to-white"
-        >
-          <Contact />
-        </section>
-      </main>
-
-      {/* Footer */}
+          <Route path="/termsofservice" element={<TermsOfService />} />
+          <Route path="/warehousing" element={<Warehousing />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );
